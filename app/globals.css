@@ -2,26 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+html{
+    -webkit-text-size-adjust: 100%;
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --black: black;
+    --grey: #414042;
+    --blue: #1991eb;
+    --white: white;
+    --light-coral: rgba(244,141,145,.7);
+    --grey-opaque: rgba(65,64,66,.7);
+    --green-opaque: rgba(0,166,157,.7);
+    --cornflower-blue: #949bc7;
+    --medium-turquoise: #7fd2ce;
+    --dark: #111212;
+    --dim-grey: #676767;
+    --green: #00a69d;
+    --orange: #f7931d;
+    --orange-opaque: rgba(247,147,29,.9);
+    --red: #ed1c24;
+    --red-opaque: rgba(237,28,36,.7);
+    --dark-blue: #2a388f;
+    --dark-blue-opaque: rgba(42,56,143,.7);
+    --blue-2: #1b75bb;
+    --blue-opaque: rgba(27,117,187,.7);
+    --medium-turquoise-2: #7fd2ce;
+    --white-opaque: rgba(255,255,255,.1);
+    --dim-grey-opaque: rgba(103,103,103,.05);
+    --light-coral-solid: #f48d91;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+*{
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+/* In your Tailwind CSS file or style block */
+.apply-link {
+    padding: 8px; /* Adjust padding as needed */
+    text-decoration: none;
+    border: 1px solid transparent; /* Set a transparent border by default */
+    display: inline-block; /* Ensures the fixed width is applied */
+    transition: background-color 0.1s ease-in, border 0.1s ease-in;
+    border-radius: 99999px;
   }
-}
+  
+  .apply-link:hover {
+    background-color: var(--white);
+    border: 1px solid var(--red); /* Change border color on hover */
+    color:var(--red-opaque)
+  }
+  
+  .apply-link-round {
+    border-radius: 9999px; /* A large value for a round border */
+    transition: border-radius 0.1s ease-in;
+  }
+  
+  .apply-link-round:hover {
+    border-radius: 9999px; /* Ensure the border-radius stays round on hover */
+  }
+   
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+/* styles/slideshow.css */
+.slideshow {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .range-slider {
+    margin-top: 20px;
+  }
+  
