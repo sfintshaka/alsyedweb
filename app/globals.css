@@ -38,6 +38,7 @@ html{
 *{
     font-family: Roboto, sans-serif;
     box-sizing: border-box;
+    background-color: var(--white-opaque);
 }
 
 /* In your Tailwind CSS file or style block */
@@ -77,3 +78,24 @@ html{
     margin-top: 20px;
   }
   
+
+  /* Whhatsapp icon */
+
+  /* Add this to your CSS file or use Tailwind CSS classes */
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366; /* WhatsApp green color */
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E; /* Darker shade of WhatsApp green on hover */
+}

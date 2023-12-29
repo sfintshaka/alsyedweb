@@ -4,10 +4,11 @@ import Navbar from './Navbar';
 
 
 
+
 export{
     Header,
     Navbar,
-    Footer
- 
+    Footer,
+
   
 }
